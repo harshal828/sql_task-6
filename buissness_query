@@ -1,0 +1,139 @@
+create table economic(
+	id int,
+	series_reference varchar,
+	period varchar,
+	status varchar,
+	units varchar,
+	magnitude int
+)
+	
+select * from economic
+
+copy statics from 'E:\DA - 8\TASK\task 6/economic-survey-of-manufacturing-march-2024-csv.csv' DELIMITER ',' CSV header
+	
+-------
+
+create table statics(
+	id int,	
+	Table_Name varchar,
+	Table_Sub_Name varchar,
+	Table_Section varchar,
+	Breakdown varchar,
+	Quarter int,
+	Unit varchar
+)
+
+select * from statics
+
+copy statics from 'E:\DA - 8\TASK\task 6/tatauranga-statistics-on-maori-businesses-march-2024-quarter.csv' DELIMITER ',' CSV header
+
+select * from statics
+
+----------
+ create table annual(
+	Year int,
+	Industry_aggregation varchar,
+	Industry_code int,	
+	Industry_name varchar,
+	Units varchar,
+	Variable_code varchar,
+	Variable_name varchar,	
+	Variable_category varchar,
+	Value int
+)
+
+select * from annual
+
+copy annual from 'E:\DA - 8\TASK\task 6/annual-enterprise-survey-2023-financial-year-provisional5.csv' DELIMITER ',' CSV header
+
+select * from annual
+
+----------
+
+select id, Series_reference, Period, status,units, Magnitude from economic
+
+select id, table_name, table_sub_name, table_section, breakdown from statics
+
+--- inner join
+
+select e.id,e.Series_reference,e.Period,e.status,e.units,e.Magnitude,s.id,s.table_name,s.table_sub_name,s.table_section,s.breakdown from economic as e
+inner join statics as s
+on e.id = s.id
+
+----left join 
+
+select id,units, magnitude from economic
+select id,table_section from statics
+
+select e.id,e.units,e.magnitude,s.id,s.breakdown from economic as e
+left join statics as s 
+on e.id= s.id
+
+	
+---group by
+	
+select sum(e.magnitude),s.table_name from economic as e
+inner join statics as s
+on e.id = s.id
+group by s.table_name
+
+---having
+	
+select sum(e.magnitude),s.table_name from economic as e
+inner join statics as s
+on e.id = s.id
+group by s.table_name
+having sum(e.magnitude) > 400
+
+---UNION
+
+select id,units from economic where units = 'dollar'
+UNION 	
+select id,table_name from statics where table_name = 'Sales by Maori authorities, by industry'
+
+         ---------------
+
+select year,industry_aggregation, industry_code, industry_name, units, variable_code, variable_name, variable_category,value from annual 
+
+select id, Series_reference, Period, status,units, Magnitude from economic
+
+---join	
+	
+select a.year,a.industry_aggregation, a.industry_code,a.industry_name, a.units,a.variable_code, a.variable_name,a.variable_category,a.value, e.id, e.Series_reference, e.Period, e.status,e.units,
+e.Magnitude from annual as a
+inner join economic as e
+on a.units = e.units
+
+----left join
+	
+select a.units,a.variable_code, a.variable_name from annual
+	
+select id,units, magnitude from economic
+
+select  a.year,a.variable_code, a.variable_name,e.id,e.units,e.magnitude from annual as a
+left join economic as e
+on a.year = e.magnitude
+
+---group by
+	
+select sum(a.value),e.period from annual as a
+inner join economic as e
+on a.units = e.units
+group by e.period
+
+---having
+
+select sum(a.value),e.period from annual as a
+inner join economic as e
+on a.units = e.units
+group by e.period
+having sum (a.value) > 500
+
+---UNION	
+
+select id,units from economic where id < 7
+UNION 
+select year, units from annual where year > 2023
+
+                ----------------
+

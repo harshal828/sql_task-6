@@ -1,0 +1,51 @@
+Year,Industry_aggregation,Industry_code,Industry_name,Units,Variable_code,Variable_name,Variable_category,Value
+2023,Level 1,99994,All industries,Dollars (millions),H01,Total income,Financial performance,930995
+2023,Level 5,99989,All industries,Dollars (millions),H04,"Sales, government funding, grants and subsidies",Financial performance,821630
+2021,Level 1,99799,All industries,Dollars (millions),H05,"Interest, dividends and donations",Financial performance,84354
+2023,Level 1,92999,All industries,Dollars (millions),H07,Non-operating income,Financial performance,25010
+2023,Level 1,94999,All industries,Dollars (millions),H08,Total expenditure,Financial performance,832964
+2023,Level 1,99099,All industries,Dollars (millions),H09,Interest and donations,Financial performance,55267
+2023,Level 1,90999,All industries,Dollars (millions),H10,Indirect taxes,Financial performance,7426
+2023,Level 7,89999,All industries,Dollars (millions),H11,Depreciation,Financial performance,30814
+2024,Level 1,95999,All industries,Dollars (millions),H12,Salaries and wages paid,Financial performance,147663
+2023,Level 1,99999,All industries,Dollars (millions),H13,Redundancy and severance,Financial performance,269
+2023,Level 1,99099,All industries,Dollars (millions),H14,Salaries and wages to self employed commission agents,Financial performance,1639
+2023,Level 1,79999,All industries,Dollars (millions),H19,Purchases and other operating expenses,Financial performance,566979
+2023,Level 1,99099,All industries,Dollars (millions),H20,Non-operating expenses,Financial performance,23176
+2023,Level 5,69999,All industries,Dollars (millions),H21,Opening stocks,Financial performance,80778
+2023,Level 1,99099,All industries,Dollars (millions),H22,Closing stocks,Financial performance,88197
+2020,Level 1,91999,All industries,Dollars (millions),H23,Surplus before income tax,Financial performance,105450
+2023,Level 1,99099,All industries,Dollars (millions),H24,Total assets,Financial position,2831894
+2023,Level 8,99909,All industries,Dollars (millions),H25,Current assets,Financial position,861255
+2023,Level 1,92999,All industries,Dollars (millions),H26,Fixed tangible assets,Financial position,681890
+2020,Level 1,99999,All industries,Dollars (millions),H29,Other assets,Financial position,1288749
+2023,Level 1,99999,All industries,Dollars (millions),H30,Total equity and liabilities,Financial position,2831893
+2023,Level 1,99999,All industries,Dollars (millions),H31,Shareholders funds or owners equity,Financial position,957410
+2013,Level 1,99999,All industries,Dollars (millions),H32,Current liabilities,Financial position,1074693
+2025,Level 1,99999,All industries,Dollars (millions),H33,Other liabilities,Financial position,799791
+2023,Level 1,99099,All industries,Dollars,H34,Total income per employee count,Financial ratios,464600
+2023,Level 1,99989,All industries,Dollars,H35,Surplus per employee count,Financial ratios,52600
+2023,Level 1,99999,All industries,Percentage,H36,Current ratio,Financial ratios,80
+2023,Level 1,99099,All industries,Percentage,H37,Quick ratio,Financial ratios,72
+2023,Level 10,99909,All industries,Percentage,H39,Return on equity,Financial ratios,11
+2023,Level 1,99899,All industries,Percentage,H40,Return on total assets,Financial ratios,4
+2024,Level 1,99799,All industries,Percentage,H41,Liabilities structure,Financial ratios,34
+2023,Level 1,90315,"Agriculture, Forestry and Fishing",Dollars (millions),H01,Total income,Financial performance,54462
+2023,Level 1,89010,"Agriculture, Forestry and Fishing",Dollars (millions),H04,Sales of goods and services,Financial performance,51472
+2020,Level 1,23451,"Agriculture, Forestry and Fishing",Dollars (millions),H05,"Interest, dividends and donations",Financial performance,893
+2023,Level 1,23099,"Agriculture, Forestry and Fishing",Dollars (millions),H06,"Government funding, grants and subsidies",Financial performance,15
+2023,Level 1,12345,"Agriculture, Forestry and Fishing",Dollars (millions),H07,Non-operating income,Financial performance,2081
+2023,Level 2,89067,"Agriculture, Forestry and Fishing",Dollars (millions),H08,Total expenditure,Financial performance,48377
+2023,Level 1,34567,"Agriculture, Forestry and Fishing",Dollars (millions),H09,Interest and donations,Financial performance,3641
+2023,Level 1,23451,"Agriculture, Forestry and Fishing",Dollars (millions),H10,Indirect taxes,Financial performance,517
+2023,Level 1,89012,"Agriculture, Forestry and Fishing",Dollars (millions),H11,Depreciation,Financial performance,2582
+2023,Level 1,12456,"Agriculture, Forestry and Fishing",Dollars (millions),H12,Salaries and wages paid,Financial performance,6858
+2023,Level 1,67890,"Agriculture, Forestry and Fishing",Dollars (millions),H13,Redundancy and severance,Financial performance,2
+2013,Level 1,78905,"Agriculture, Forestry and Fishing",Dollars (millions),H19,Purchases and other operating expenses,Financial performance,33623
+2023,Level 1,67453,"Agriculture, Forestry and Fishing",Dollars (millions),H20,Non-operating expenses,Financial performance,1156
+2023,Level 1,34571,"Agriculture, Forestry and Fishing",Dollars (millions),H21,Opening stocks,Financial performance,14144
+2023,Level 3,12345,"Agriculture, Forestry and Fishing",Dollars (millions),H22,Closing stocks,Financial performance,14606
+2024,Level 1,78651,"Agriculture, Forestry and Fishing",Dollars (millions),H23,Surplus before income tax,Financial performance,6547
+2023,Level 1,13456,"Agriculture, Forestry and Fishing",Dollars (millions),H24,Total assets,Financial position,213128
+2013,Level 1,12781,"Agriculture, Forestry and Fishing",Dollars (millions),H25,Current assets,Financial position,38087
+2023,Level 1,89012,"Agriculture, Forestry and Fishing",Dollars (millions),H26,Fixed tangible assets,Financial position,123770
